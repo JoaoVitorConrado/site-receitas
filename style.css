@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+:root{
+ --color01: #ff8300;
+ --color02: #ff4b00;
+ --color03: #FFDAC6;
+
+ --texto-padrao: Arial, Helvetica, sans-serif;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+   background-color: var(--color03);
+    
+}
+header{
+    background-color: white;
+    box-shadow: 0px 1px 9px 1px black;
+    padding: 10px;
+}
+#primeirotitulo{
+    text-align: center;
+    color: #ff4b00;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 3em;
+    text-shadow: 2px 1px 3px black;;
+}
+#primeiroparagrafo{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+   
+}
+nav{
+    padding: 5px;
+}
+nav > a{
+    text-decoration: none;
+    color: black;
+    font-weight: normal;
+    padding: 10px;
+    color: #ff8300;
+}
+nav > a:hover{
+    background-color: beige;
+    border-radius: 10px;
+    transition: 0.5s;
+    color: #d1640b;
+}
+main{
+    margin: auto;
+    background-color: white;
+    margin-top: 2px;
+    min-width: 300px;
+    max-width: 850px;
+    height: 100%;
+    padding: 20px;
+
+}
+picture > img{
+    width: 100%;
+    display: block;
+    margin:9px 1px 13px 1px;
+}
+
+.titulo{
+    padding: 10px;
+    color: #ff4b00;
+    font-size: 2em;
+    background-image: linear-gradient(to right, var(--color03),transparent);
+    margin-bottom: 10px;
+}
+.paragrafo{
+    font-family: var(--texto-padrao);
+    line-height: 29.5px;
+    text-indent: 20px;
+    text-align: justify;
+    
+}
+#ingredientes{
+   background-color: #ff8400af;
+    max-width: 900px;
+    min-width: 200px;
+    height: 100%;
+    margin: 11px 4px 15px 9px;
+    border-radius: 10px;
+}
+#listaingrediente{
+    padding: 10px;
+    list-style-position: inside;
+    list-style-type: '🍴';
+    columns: 2;
+    line-height: 45px;
+    color: white;
+    font-weight: normal;
+
+}
+.h3{
+    background-color: #ff4b00;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 28px;
+}
+.h3::after{
+    content: '🫕';
+}
+#listaordenada{
+    list-style-position: inside;
+    columns: 2;
+    padding: 10px;
+    line-height: 30px;
+}
+#video{
+    padding: 10px;
+    background-color: #ec8938;
+    max-width: 900px;
+    min-width: 300px;
+    max-height: max-content;
+    position: relative;
+    padding-bottom: 40%;
+}
+
+#video > iframe{
+position: absolute;
+top: 6%;
+left: 2%;
+width: 96%;
+height: 89%;
+}
+footer{
+    background-color: #d1640b;
+    padding: -1px;
+    text-align: center;
+    color: white;
+}
+footer > a{
+    text-decoration: none;
+    color: white;
+}
+footer > a:hover{
+color: black;
+}
+footer > a::before{
+    content: '🔗';
+}
